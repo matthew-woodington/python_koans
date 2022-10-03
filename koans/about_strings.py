@@ -97,6 +97,8 @@ world!
         hi = "Hello, "
         there = "world"
         string = hi + there
+        # self.assertEqual(__, hi)
+        # self.assertEqual(__, there)
         self.assertEqual("Hello, ", hi)
         self.assertEqual("world", there)
 
@@ -104,6 +106,7 @@ world!
         hi = "Hello, "
         there = "world"
         hi += there
+        # self.assertEqual(__, hi)
         self.assertEqual("Hello, world", hi)
 
     def test_plus_equals_also_leaves_original_string_unmodified(self):
@@ -111,10 +114,12 @@ world!
         hi = original
         there = "world"
         hi += there
+        # self.assertEqual(__, original)
         self.assertEqual("Hello, ", original)
 
     def test_most_strings_interpret_escape_characters(self):
         string = "\n"
         self.assertEqual('\n', string)
         self.assertEqual("""\n""", string)
+        # self.assertEqual(__, len(string))
         self.assertEqual(1, len(string))
