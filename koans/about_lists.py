@@ -74,6 +74,7 @@ class AboutLists(Koan):
     def test_lists_and_ranges(self):
         self.assertEqual(range, type(range(5)))
         self.assertNotEqual([1, 2, 3, 4, 5], range(1, 6))
+        # prints numbers up to but not including the entered number
         # self.assertEqual(__, list(range(5)))
         # self.assertEqual(__, list(range(5, 9)))
         self.assertEqual([0, 1, 2, 3, 4], list(range(5)))
