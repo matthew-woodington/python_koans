@@ -15,3 +15,4 @@ class _SecretSquirrel:
     @property
     def name(self):
         return "Mr Anonymous"
+        
